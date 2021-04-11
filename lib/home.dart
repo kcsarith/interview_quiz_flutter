@@ -5,7 +5,7 @@ class homePage extends StatefulWidget{
 }
 
 class _homePageState extends State<homePage>{
-  Widget customCard(){
+  Widget customCard(String lang_name,){
     return Padding(
       padding: EdgeInsets.all(
         20.0,
@@ -40,7 +40,7 @@ class _homePageState extends State<homePage>{
                 ),
                 Center(
                   child:Text(
-                    "Python",
+                    lang_name,
                     style: TextStyle(
                       fontSize: 24.0,
                       color: Colors.white,
@@ -54,7 +54,7 @@ class _homePageState extends State<homePage>{
                   child: Text(
                     'THIS IS RANDOM',
                     style: TextStyle(
-                      fontSize: 16.0,
+                      fontSize: 18.0,
                       color: Colors.white,
                       fontFamily: "Alike",
                     ),
@@ -83,7 +83,9 @@ class _homePageState extends State<homePage>{
       ),
       body: ListView(
         children: <Widget>[
-          customCard(),
+          customCard("Python"),
+          customCard("JavaScript"),
+          customCard("Dart"),
         ],
       ),
     );
