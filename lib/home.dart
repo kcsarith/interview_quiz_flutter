@@ -49,6 +49,19 @@ class _homePageState extends State<homePage>{
                     ),
                   ),
                 ),
+                Container(
+                  padding: EdgeInsets.all(20.0),
+                  child: Text(
+                    'THIS IS RANDOM',
+                    style: TextStyle(
+                      fontSize: 16.0,
+                      color: Colors.white,
+                      fontFamily: "Alike",
+                    ),
+                    maxLines: 5,
+                    textAlign: TextAlign.justify,
+                  ),
+                ),
               ],
             ),
           ),
